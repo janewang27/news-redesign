@@ -3,7 +3,7 @@ body {
 	overflow-x: hidden;
 }
 
-.header {
+.logo {
 	padding-top: 15px;
 	padding-left: 10px;
 }
@@ -47,15 +47,15 @@ body {
 	vertical-align: middle;
 }
 
-.headers {
+.titles {
 	margin-top: 35px;
 }
 
-.headers a {
+.titles a {
 	text-decoration: none;
 }
 
-.headers img {
+.titles img {
 	float: left;
 	margin-left: 18px;
 	margin-right: 6px;
@@ -194,3 +194,93 @@ h1 {
 	text-decoration: none;
 	color: black;
 }
+
+/* SIZES */
+
+.container {
+	width: 960px;
+}
+
+.header {
+	width: 960px;
+}
+
+.titles {
+	width: 960px;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 640px) {
+
+	.container {
+		width: 480px;
+	}
+
+	.header {
+		position: absolute;
+	}
+
+	.nav {
+		display: none;
+		position: absolute;
+		padding: 20px;
+		background: #fff;
+		border: 5px solid #444;
+		right: 20px;
+		top: 60px;
+		width: 50%;
+		border-radius: 4px 0 4px 4px;
+	}
+
+	.logo img {
+		max-width: 200px;
+	}
+
+	.categories {
+		display: none;
+	}
+
+	footer {
+		width: 480px;
+	}
+
+	/*.titles {
+		display: inline-block;
+	}
+	*/ 
+	html {
+		font-size: 90%;
+	}
+		
+	a.menu-link {
+  	    float: right;
+	    display: block;
+	    padding: 1em;
+	}
+
+	nav[role=navigation] {
+		clear: both;
+		-webkit-transition: all 0.3s ease-out;  
+		-moz-transition: all 0.3s ease-out;
+		-ms-transition: all 0.3s ease-out;
+		-o-transition: all 0.3s ease-out;
+		transition: all 0.3s ease-out;
+	}
+
+	.js nav[role=navigation] {
+		overflow: hidden;
+		max-height: 0;
+	}
+	nav[role=navigation].active {
+		max-height: 15em;
+	}
+	nav[role=navigation] ul {
+		margin: 0;
+		padding: 0;
+		border-top: 1px solid #808080;
+	}
+	nav[role=navigation] li a {
+		display: block;
+		padding: 0.8em;
+		border-bottom: 1px solid #808080;
+	} 
