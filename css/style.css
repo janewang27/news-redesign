@@ -47,6 +47,11 @@ body {
 	vertical-align: middle;
 }
 
+.imgwrap a {
+	text-decoration: none;
+	color: white;
+}
+
 .titles {
 	margin-top: 35px;
 }
@@ -75,6 +80,8 @@ h1 {
 	padding-top: 4px;
 	text-align: center;
 }
+
+
 
 .scrollbox {
 	margin-top: 15px;
